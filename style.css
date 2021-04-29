@@ -3,11 +3,23 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: royalblue;
+  font-family: "Poppins", sans-serif;
+}
 main {
   width: 1200px;
   max-width: 90%;
   margin: 0 auto;
-  border: 1px solid gainsboro;
+}
+section {
+  background-color: whitesmoke;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+.section-title {
+  color: blueviolet;
 }
 .top-players,
 .blogs {
