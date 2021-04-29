@@ -9,19 +9,30 @@ main {
   margin: 0 auto;
   border: 1px solid gainsboro;
 }
-.top-players {
+.top-players,
+.blogs {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
   margin-top: 20px;
+  place-items: center;
 }
-.player {
+.top-players {
+  grid-template-columns: repeat(3, 1fr);
+}
+.blogs {
+  grid-template-columns: repeat(2, 1fr);
+}
+.player,
+.blog {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 .player img {
   height: 50px;
+  margin-right: 20px;
+}
+.thumbnail img {
+  width: 200px;
   margin-right: 20px;
 }
 
@@ -29,9 +40,18 @@ main {
   .top-players {
     grid-template-columns: repeat(2, 1fr);
   }
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 @media (max-width: 688px) {
   .top-players {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .blog {
+    display: block;
   }
 }
